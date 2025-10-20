@@ -2,7 +2,7 @@
 
 A classic game of Rock, Paper, Scissors built with vanilla **HTML, CSS, and JavaScript**. This project was created in 2023 as part of my early web development learning journey. It's a simple, interactive game where you can test your luck against the computer.
 
-![Rock Paper Scissors Screenshot](game-ss.png)
+![Rock Paper Scissors Screenshot](images/game-ss.png)
 
 ---
 
@@ -38,11 +38,11 @@ To run this project locally, all you need is a web browser.
 
 1.  **Clone the repository:**
     ```
-    git clone https://github.com/your-username/rock-paper-scissors.git
+    git clone https://github.com/your-username/rock-paper-scissors-game.git
     ```
 2.  **Navigate to the project directory:**
     ```
-    cd rock-paper-scissors
+    cd rock-paper-scissors-game
     ```
 3.  **Open the `index.html` file** in your favorite web browser (like Chrome, Firefox, or Edge).
 
