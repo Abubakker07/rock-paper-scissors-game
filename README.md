@@ -31,19 +31,3 @@ This project was built using the fundamental building blocks of the web:
 -   ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 ---
-
-## 🚀 Getting Started
-
-To run this project locally, all you need is a web browser.
-
-1.  **Clone the repository:**
-    ```
-    git clone https://github.com/your-username/rock-paper-scissors-game.git
-    ```
-2.  **Navigate to the project directory:**
-    ```
-    cd rock-paper-scissors-game
-    ```
-3.  **Open the `index.html` file** in your favorite web browser (like Chrome, Firefox, or Edge).
-
-That's it! You can now play the game.
