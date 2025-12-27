@@ -3,35 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors Game</title>
+    <title>RPS Ultimate</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Rock Paper Scissors</h1>
-    <div class="choices">
-        <div class="choice" id="rock">
-            <img src="images/image.png">
+    <div class="container">
+        <h1>Rock Paper Scissors <span class="badge">PRO</span></h1>
+        
+        <div class="score-board">
+            <div class="score-box user">
+                <p>You</p>
+                <p id="user-score">0</p>
+            </div>
+            <div class="timer">
+                <p>Streak</p>
+                <p id="streak-score">0</p>
+            </div>
+            <div class="score-box comp">
+                <p>Comp</p>
+                <p id="comp-score">0</p>
+            </div>
         </div>
-        <div class="choice" id="paper">
-            <img src="images/image copy 2.png">
+
+        <div class="battle-arena">
+            <div class="hand-container">
+                <img src="image.png" alt="User Hand" id="user-hand" class="hand">
+            </div>
+            <div class="hand-container">
+                <img src="image.png" alt="Computer Hand" id="comp-hand" class="hand">
+            </div>
         </div>
-        <div class="choice" id="scissors">
-            <img src="images/image copy.png">
+
+        <div class="msg-container">
+            <p id="msg">Choose your weapon!</p>
         </div>
+
+        <div class="choices">
+            <div class="choice" id="rock" onclick="playGame('rock')">
+                <img src="image.png" alt="rock">
+            </div>
+            <div class="choice" id="paper" onclick="playGame('paper')">
+                <img src="image copy 2.png" alt="paper">
+            </div>
+            <div class="choice" id="scissors" onclick="playGame('scissors')">
+                <img src="image copy.png" alt="scissors">
+            </div>
+        </div>
+
+        <button id="reset-btn" onclick="resetGame()">Reset Game</button>
     </div>
-    <div class="score-board">
-        <div class="score">
-            <p id="user-score">0</p>
-            <p>You</p>
-        </div>
-        <div class="score">
-            <p id="comp-score">0</p>
-            <p>Comp</p>
-        </div>
-    </div>
-    <div class="msg-container">
-        <p id="msg">Play your move</p>
-    </div>
+
     <script src="first.js"></script>
 </body>
 </html>
