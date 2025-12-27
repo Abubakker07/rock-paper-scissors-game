@@ -1,65 +1,178 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
     text-align: center;
+    padding: 20px;
 }
 
-h1{
-    background-color: #081b31;
-    color: white;
-    height: 5rem;
-    line-height: 5rem;
+h1 {
+    margin-bottom: 2rem;
+    color: #e2e8f0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.choice{
-    height: 160px;
-    width: 160px;
+.badge {
+    background: #f59e0b;
+    font-size: 0.5em;
+    padding: 2px 8px;
+    border-radius: 5px;
+    vertical-align: middle;
+    color: black;
+}
+
+/* Score Board Styling */
+.score-board {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
 }
 
-.choice:hover{
-    cursor: pointer;
-    background-color: #081b31;
+.score-box {
+    text-align: center;
+    width: 80px;
 }
 
-img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
+.score-box p:first-child {
+    font-size: 0.9rem;
+    color: #94a3b8;
 }
 
-.choices{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    margin-top: 5rem;
-}
-
-.score-board{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.score-box p:last-child {
     font-size: 2rem;
+    font-weight: 600;
+}
+
+.timer {
+    text-align: center;
+    background: #334155;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+.timer #streak-score {
+    color: #f59e0b;
+    font-weight: bold;
+}
+
+/* Battle Arena (Where the animation happens) */
+.battle-arena {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin: 2rem 0;
+    height: 150px; /* Fixed height to prevent layout jumps */
+}
+
+.hand {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    transition: transform 0.2s;
+}
+
+/* Rotate the computer hand to face the user */
+#comp-hand {
+    transform: scaleX(-1); 
+}
+
+/* Animation Class */
+.shaking {
+    animation: shake 0.5s ease infinite;
+}
+
+@keyframes shake {
+    0% { transform: translateY(0px) scaleX(1); }
+    25% { transform: translateY(-15px) scaleX(1); }
+    50% { transform: translateY(0px) scaleX(1); }
+    75% { transform: translateY(-15px) scaleX(1); }
+    100% { transform: translateY(0px) scaleX(1); }
+}
+
+/* Mirror shake for computer */
+.shaking-comp {
+    animation: shakeComp 0.5s ease infinite;
+}
+@keyframes shakeComp {
+    0% { transform: translateY(0px) scaleX(-1); }
+    25% { transform: translateY(-15px) scaleX(-1); }
+    50% { transform: translateY(0px) scaleX(-1); }
+    75% { transform: translateY(-15px) scaleX(-1); }
+    100% { transform: translateY(0px) scaleX(-1); }
+}
+
+/* Choices Section */
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.choice {
+    background: #1e293b;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 4px solid transparent;
+}
+
+.choice:hover {
+    transform: translateY(-5px);
+    background: #334155;
+    border-color: #38bdf8;
+}
+
+.choice img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* Message Styling */
+.msg-container {
+    margin-top: 1rem;
+    min-height: 3rem;
+}
+
+#msg {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Reset Button */
+#reset-btn {
     margin-top: 2rem;
-    gap: 5rem;
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid #94a3b8;
+    color: #94a3b8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-#user-score,#comp-score{
-    font-size: 4rem;
-}
-
-.msg-container{
-    margin-top: 2rem;
-}
-
-#msg{
-    background-color: #081b31;
-    color: white;
-    font-size: 1.5rem;
-    display: inline;
-    padding: 0.5rem;
-    border-radius: 1rem;
+#reset-btn:hover {
+    background: #e2e8f0;
+    color: #0f172a;
 }
