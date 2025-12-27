@@ -10,7 +10,7 @@ const msg = document.querySelector("#msg");
 const userHand = document.querySelector("#user-hand");
 const compHand = document.querySelector("#comp-hand");
 
-// Image paths - Make sure these match your files exactly
+// Image paths
 const images = {
     rock: "image.png",
     paper: "image copy 2.png",
@@ -58,7 +58,7 @@ const playGame = (userChoice) => {
     if (isAnimating) return; // Stop if animation is running
     isAnimating = true;
 
-    // 1. Reset hands to Rock (for the shaking animation)
+    // 1. Reset hands to Rock
     userHand.src = images['rock'];
     compHand.src = images['rock'];
     msg.innerText = "Wait for it...";
