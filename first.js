@@ -12,9 +12,9 @@ const compHand = document.querySelector("#comp-hand");
 
 // Image paths
 const images = {
-    rock: "image.png",
-    paper: "image copy 2.png",
-    scissors: "image copy.png"
+    rock: "images/image.png",
+    paper: "images/image copy 2.png",
+    scissors: "images/image copy.png"
 };
 
 const genCompChoice = () => {
