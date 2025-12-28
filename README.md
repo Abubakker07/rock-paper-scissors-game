@@ -33,15 +33,3 @@ This project was built using the fundamental building blocks of the web:
 * **JavaScript (ES6)**
 
 ---
-
-## 🚀 How to Play
-
-1.  Click the link above to open the game.
-2.  Select your weapon: **Rock**, **Paper**, or **Scissors**.
-3.  Watch the battle unfold!
-4.  Check the scoreboard to see if you can beat the computer.
--   ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
--   ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
--   ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-
----
