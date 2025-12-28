@@ -1,6 +1,6 @@
 # Rock, Paper, Scissors Game ✊✋✌️
 
-### 🎮 [**PLAY THE GAME LIVE HERE**](https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/)
+### 🎮 [**PLAY THE GAME LIVE HERE**](https://abubakker07.github.io/rock-paper-scissors-game/)
 
 A classic game of Rock, Paper, Scissors built with vanilla **HTML, CSS, and JavaScript**. This project was created in 2023 as part of my early web development learning journey. It's a simple, interactive game where you can test your luck against the computer.
 
